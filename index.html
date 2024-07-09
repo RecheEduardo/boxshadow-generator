@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Box-Shadow</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2250/2250329.png" type="image/x-icon">
+    <script src="js/scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="settings">
+            <h1 class="config-title">Configurações da Box Shadow:</h1>
+            <div class="config-inputs">
+                <div class="x-position">
+                    <h3>Deslocamento horizontal:</h3>
+                    <input type="range" name="xPosition" id="x-position" min="0" max="50" step="1" value="10">
+                </div>
+                <div class="value-number">
+                    <input type="number" name="xPosition" id="x-position-number" value="10" readonly>
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="config-inputs">
+                <div class="y-position">
+                    <h3>Deslocamento vertical:</h3>
+                    <input type="range" name="yPosition" id="y-position" min="0" max="50" step="1" value="10">
+                </div>
+                <div class="value-number">
+                    <input type="number" name="yPosition" id="y-position-number" value="10" readonly>
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="config-inputs">
+                <div class="blur-intesity">
+                    <h3>Intensidade do desfoque:</h3>
+                    <input type="range" name="blurIntensity" id="blur-intensity" min="0" max="50" step="1" value="5">
+                </div>
+                <div class="value-number">
+                    <input type="number" name="blur-intensity" id="blur-intensity-number" value="5" readonly>
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="config-inputs">
+                <div class="spread-intesity">
+                    <h3>Intensidade do espalhamento:</h3>
+                    <input type="range" name="spreadIntensity" id="spread-intensity" min="-25" max="25" step="1" value="0">
+                </div>
+                <div class="value-number">
+                    <input type="number" name="spread-intesity" id="spread-intensity-number" value="0" readonly>
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="config-inputs">
+                <div class="opacity">
+                    <h3>Opacidade da sombra:</h3>
+                    <input type="range" name="shadowOpacity" id="shadow-opacity" min="0" max="1" step="0.01" value="1">
+                </div>
+                <div class="value-number">
+                    <input type="number" name="shadowOpacity" id="shadow-opacity-number" value="1" readonly>
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="config-inputs">
+                <div class="shadow-color">
+                    <h3>Cor da sombra:</h3>
+                    <input type="color" name="shadowColor" id="shadow-color" value="#000000">
+                </div>
+                <div class="color-hex-text">
+                    <input type="text" name="shadowColor" id="shadow-color-value" readonly value="#000000">
+                </div>
+            </div>
+            <div class="config-inputs">
+                <div class="shadow-inset">
+                    <h3>Sombra interna?</h3>
+                    <input type="checkbox" name="shadowInset" id="shadow-inset">
+                </div>
+            </div>
+            
+        </section>
+        <section class="preview">
+            <div class="preview-area">
+                <h1 class="preview-title">Preview do efeito gerado:</h1>
+                <div class="boxshadow-result"></div>
+            </div>
+            <div class="code-clipboard">
+                <h1 class="copycode-title">Copie e cole no seu arquivo de CSS:</h1>
+                <div class="result-code"></div>
+                <p class="result-message">Clique no quadro acima para copiar as regras</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
